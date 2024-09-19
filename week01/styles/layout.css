@@ -37,14 +37,14 @@ nav ul li a{
 }
 
 main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 70% 30%;
     height: 60vh;
 }
 
 section {
     background-color: #ccc;
     color: #333;
-    width: 60%;
     padding: 20px;
 }
 
