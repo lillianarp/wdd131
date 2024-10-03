@@ -5,7 +5,6 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button'); // <- looks for the first button in the HTML
 const list = document.querySelector('ul');
 
-
 button.addEventListener('click', function() { // <- the Add Chapter button click event function block, apparently
     if (input.value.trim() !== '') { // trim() method removes whitespace 
         const li = document.createElement('li'); 
