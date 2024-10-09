@@ -68,11 +68,9 @@
         gap: 10px;
     }
 
-
-/* 
     /* Menu Hover Effect */
 
-    /* .navigation a::after {
+    .navigation a::after {
         content: '';
         position: absolute;
         width: 100%;
@@ -94,6 +92,6 @@
         justify-content: space-between;
         list-style-type: none;
         width: 100%;
-    }  */
+    } 
 
-} */
+} 
