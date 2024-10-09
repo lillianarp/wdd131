@@ -1,0 +1,133 @@
+/* General Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 5px 0;
+}
+
+body {
+    font-family:'Roboto', 'Trebuchet MS', sans-serif;
+}
+
+header, footer {
+    background-color: #090907;
+    color: #fff;
+    padding: 20px;
+}
+
+/* NAVIGATION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    /* border: 1px solid green; */
+    width: 100%;
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+.navigation {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation a {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+#menuburger {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    top: 1.3rem;
+    right: 4rem;
+}
+
+#menuburger::before {
+    content: "≡";
+    color: #0087ca;
+    font-size: 32px;
+}
+
+#menuburger.show::before {
+    content: "X";
+    color: #0087ca;
+    font-size: 32px;
+}
+
+/* Menu Hover Effect */
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background-color: #0087ca;
+    transition: transform 0.25s ease-out;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);    
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+} 
+
+/* MAIN */
+
+main h2 {
+    text-align: center;
+    font-size: 24px;
+    padding: 30px 10px 10px 10px;
+}
+
+main ul {
+    width: 95%;
+    margin: 20px auto;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+main ul img {
+    width: 100%;
+}
+
+main ul figcaption { 
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
