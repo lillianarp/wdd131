@@ -11,7 +11,6 @@
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-}
 
 
 @media (min-width: 900px) {
@@ -50,13 +49,13 @@
         align-items: center;
     }
 
-    .navigation a {
+    /* .navigation a {
         font-size: 20px;
         color: #fff;
         text-decoration: none;
         display: inline-block;
         position: relative;
-    }
+    } */
 
     /* MAIN GRID x 3 */
 
@@ -73,7 +72,7 @@
 /* 
     /* Menu Hover Effect */
 
-    .navigation a::after {
+    /* .navigation a::after {
         content: '';
         position: absolute;
         width: 100%;
@@ -97,4 +96,4 @@
         width: 100%;
     }  */
 
-}
+} */

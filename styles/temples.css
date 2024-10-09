@@ -1,5 +1,13 @@
 /* General Styles */
 
+:root {
+    --primary-color: #0087ca;
+    --background-color: #090907;
+    --text-color: #fff;
+    --font-size-large: 20px;
+    --line-height-large: 32px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,11 +19,12 @@ p {
 
 body {
     font-family:'Roboto', 'Trebuchet MS', sans-serif;
+    color: var(--text-color);
 }
 
 header, footer {
-    background-color: #090907;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 20px;
 }
 
@@ -66,13 +75,13 @@ nav.show {
 
 #menuburger::before {
     content: "≡";
-    color: #0087ca;
+    color: var(--primary-color);
     font-size: 32px;
 }
 
 #menuburger.show::before {
     content: "X";
-    color: #0087ca;
+    color: var(--primary-color);
     font-size: 32px;
 }
 
