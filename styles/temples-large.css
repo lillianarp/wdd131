@@ -1,6 +1,8 @@
 @media (min-width: 700px) {
     /* tablet sized screens */
 
+    /* MAIN GRID x 2*/
+
     main ul {
         width: 95%;
         margin: 20px auto;
@@ -56,7 +58,19 @@
         position: relative;
     }
 
+    /* MAIN GRID x 3 */
 
+    main ul {
+        width: 95%;
+        margin: 20px auto;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+
+/* 
     /* Menu Hover Effect */
 
     .navigation a::after {
@@ -81,18 +95,6 @@
         justify-content: space-between;
         list-style-type: none;
         width: 100%;
-    } 
-
-
-    /* MAIN */
-
-    main ul {
-        width: 95%;
-        margin: 20px auto;
-        list-style-type: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-    }
+    }  */
 
 }
