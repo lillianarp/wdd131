@@ -113,7 +113,8 @@ nav.show {
 
 main h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 26px;
+    color: var(--background-color);
     padding: 30px 10px 10px 10px;
 }
 
@@ -132,6 +133,7 @@ main ul img {
 
 main ul figcaption { 
     padding: 10px 20px 20px;
+    color: var(--background-color);
     text-align: center;
 }
 
