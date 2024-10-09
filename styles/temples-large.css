@@ -25,17 +25,14 @@
     }
 
     header h1 {
-        /* border: 1px solid red; */
         width: 30%;
     }
 
     #menuburger {
         display: none;
-        /* border: 1px solid yellow; */
     }
 
     nav {
-        /* border: 1px solid green; */
         width: 60%;
         display: block;
     }
@@ -94,4 +91,4 @@
         width: 100%;
     } 
 
-} 
+} }
