@@ -23,11 +23,11 @@ hambutton.addEventListener('click', () => {
     console.log('Menu toggled'); // Debugging to check if the click event works
 
     // Hide or show the header title based on menu state
-    if (mainnav.classList.contains('show')) {
-        headerTitle.style.display = 'none'; // Hide the title when menu is shown
-    } else {
-        headerTitle.style.display = 'block'; // Show title when menu is hidden
-    }
+    // if (mainnav.classList.contains('show')) {
+    //     headerTitle.style.display = 'none'; // Hide the title when menu is shown
+    // } else {
+    //     headerTitle.style.display = 'block'; // Show title when menu is hidden
+    // }
 
 });
 
