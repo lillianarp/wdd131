@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page | Oahu, Hawaii </title>
+    <meta name="description" content="Developing a responsive web page that follows best practices | WDD 131 Dynamic Web Fundamentals">
+    <meta name="author" content="Assignment by Lillian Arp for WDD 131">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-larger.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Oahu, Hawaii</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/oahu_large.webp" media="(min-width: 1000px)">
+                <source srcset="images/oahu_medium.webp" media="(min-width: 550px)">
+                <img src="images/oahu_small.webp" alt="Oahu, Hawaii">
+            </picture>
+        </div>
+        <section class="data-grid">
+            <h2>Data</h2>
+            <div>Area:</div>
+            <div>596.7 sq mi (1,545 km2)</div>
+            <div>Population:</div>
+            <div>1,016,508</div>
+            <div>Largest Settlement:</div>
+            <div>Honolulu</div>
+            <div>Languages:</div>
+            <div>English, 'Ōlelo Hawai'i</div>
+            <div>Currency:</div>
+            <div>US Dollar</div>
+            <div>Time Zone:</div>
+            <div>GMT-10</div>
+            <div>Calling Code:</div>
+            <div>+808</div>
+            <div>Internet TLD:</div>
+            <div>.com</div>
+        </section>
+        <section class="weather-grid">
+            <h2>Weather</h2>
+            <img src="images/cloudy.svg" alt="Cloudy weather">
+            <div>Temperature:</div>
+            <div id="temperature">43 °F</div>
+            <div>Conditions:</div>
+            <div>Cloudy</div>
+            <div>Wind:</div>
+            <div id="windSpeed">8 mph</div>
+            <div>Wind Chill:</div>
+            <div id="windChillResult">N/A</div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; <span id="currentYear"></span> 🌴 Lillian Arp 🌴 </p>
+        <p id="lastModified">Last Modified: <span id="modifiedDate"></span></p>
+    </footer>
+</body>
+</html>
