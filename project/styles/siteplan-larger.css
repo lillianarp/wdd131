@@ -1,0 +1,20 @@
+
+@media (min-width: 900px) {
+    
+   #hamburger {
+        display: none;
+   }
+    
+   .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        margin-right: 2rem;
+   }
+
+   .navigation li {
+        list-style: none;
+   }
+}

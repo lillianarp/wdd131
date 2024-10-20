@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href=".css"> -->
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <h1 id="courseName"></h1>
+    <h2 id="courseCode"></h2>
+    <label for="sectionNumber">Section Number</label>
+    <input id="sectionNumber" />
+    <button id="enrollStudent">Enroll Student</button>
+    <button id="dropStudent">Drop Student</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Section#</th>
+                <th>Room#</th>
+                <th>#Enrolled</th>
+                <th>Days</th>
+                <th>Instructor</th>
+            </tr>
+        </thead>
+        <tbody id="sections"></tbody>
+    </table>
+</body>
+</html>
