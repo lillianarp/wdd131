@@ -1,0 +1,51 @@
+@media (min-width: 700px) {
+    /* tablet sized screens */
+
+    /* MAIN GRID x 2*/
+
+    #temple-grid {
+        grid-template-columns: 1fr 1fr;
+        margin: 20px auto;
+    }
+
+
+@media (min-width: 900px) {
+    /* desktop sized screens */
+
+    header {
+        padding: 1rem 3rem;
+        height: 15vh;
+    }
+
+    header h1 {
+        width: 30%;
+    }
+
+    #menuburger {
+        display: none;
+    }
+
+    nav {
+        width: 60%;
+        display: block;
+    }
+    
+    .navigation {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* MAIN GRID x 3 */
+
+    #temple-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Menu Hover Effect */
+
+    .navigation a::after {
+       bottom: -5px;
+         height: 3px;
+    }
+
+} }
