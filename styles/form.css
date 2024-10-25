@@ -96,6 +96,30 @@ form {
     margin-top: 5px; 
 }
 
+/* Required Fields */
+
+/* Add an asterisk after every label for a required field */
+.prf label::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+/* Add extra specificity to avoid adding asterisk to labels not linked to required fields */
+.prf #rating-options label::after,
+.prf #useful-features label::after {
+    content: ""; /* This clears the asterisk for specific label types */
+}
+
+
+/* Optional fields (e.g., Written Review) */
+.prf label[for="review"]::after,
+.prf label[for="name"]::after {
+    content: " (Optional)";
+    font-size: 0.9em;
+    color: #5A5A8F;
+    font-style: italic;
+}
 
 .prf label[for="review"]::after,
 .prf label[for="name"]::after {
