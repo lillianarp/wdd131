@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | WDD 131 Dynamic Web Fundamentals</title>
+    <meta name="description" content="HTML Form Assignment for WDD 131">
+    <meta name="author" content="Lillian Arp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <!-- <link rel="stylesheet" href=".css"> -->
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>WDD 131 Assignment</h2>
+    </header>
+    <main>
+
+        <h1>Product Review Form</h1>
+        <form method="get" action="review.html" class="prf">
+            <fieldset>
+                <label>Product Name 
+                    <select name="product" id="select-product">
+                        <option value="" disabled selected>Select a Product</option>
+                        <!-- Dynamic options -->
+                    </select>
+                </label>
+                <div id="rating">
+                    <div>Overall Rating</div>
+                    <div id="rating-options">
+                        <label for="1-star">
+                            ★
+                            <input type="radio" id="1-star" name="rating" value="1" required> 
+                        </label>
+                        <label for="2-star">
+                            ★★
+                            <input type="radio" id="2-star" name="rating" value="2" required> 
+                        </label>
+                        <label for="3-star">
+                            ★★★
+                            <input type="radio" id="3-star" name="rating" value="3" required> 
+                        </label>
+                        <label for="4-star">
+                            ★★★★
+                            <input type="radio" id="4-star" name="rating" value="4" required> 
+                        </label>
+                        <label for="5-star">
+                            ★★★★★
+                            <input type="radio" id="5-star" name="rating" value="5" required> 
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Date of Installation <input type="date" id="install-date" name="install-date" required> </label>
+            </fieldset>
+            <fieldset>
+                <div>Which features did you find useful in the product? <br> <em>(Check all that apply)</em></div>
+                <label><input type="checkbox" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" name="features" value="ease">Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" name="features" value="design">Design</label>
+            </fieldset>
+            <fieldset>
+                <label for="review">Written Review</label>
+                    <textarea id="review" name="optional-review"></textarea>
+                <label for="name">Your Name </label>
+                    <input type="text" id="name" name="name">
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; <span id="currentYear"></span> 🌴 Lillian Arp 🌴 </p>
+        <p id="lastModified">Last Modified: <span id="modifiedDate"></span></p>
+    </footer>
+</body>
+</html>
+

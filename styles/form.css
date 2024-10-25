@@ -1,0 +1,135 @@
+
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+main h1 {
+    background-color: #455B55;
+    padding: 1rem;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* FORM STYLES */
+
+form {
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.prf fieldset {
+    border: none;
+    min-height: 100px;
+    min-width: 100%;
+}
+
+.prf label {
+    display: block;
+    padding-top: 0.5rem;
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+
+.prf select,
+.prf input[type="radio"],
+.prf textarea,
+.prf input[type="text"] {
+    display: block;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 0.8rem 0.6rem;
+    width: 100%;
+    max-width: 400px;
+    /* appearance: none; */
+}
+
+.prf #select-product {
+    min-height: 50px; 
+    min-width: 400px; 
+}
+
+
+.prf input[type="date"] {
+    display: block;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 0.9rem 0.6rem;
+    width: 100%;
+    max-width: 380px;
+}
+
+.prf input[type="checkbox"] {
+    margin-right: 0.8rem;
+    transform: scale(1.5);
+}
+
+.prf input[type="radio"] {
+    transform: scale(1.2);
+}
+
+/* Overall Rating Section */
+
+.prf #rating {
+    /* border: 1px solid blue; */
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.6rem;
+}
+
+.prf #rating-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prf #rating-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px; 
+}
+
+.prf #rating-options input {
+    margin-top: 5px; 
+}
+
+
+.prf label[for="review"]::after,
+.prf label[for="name"]::after {
+    content: " (Optional)";
+    font-size: 0.9em;
+    color: #5A5A8F; 
+    font-style: italic; 
+}
+
+.prf label[for="name"] {
+    margin-top: 1rem;
+}
+
+.prf #review {
+    width: 100%;
+    height: 180px;
+}
+
+.prf input[type="submit"] {
+    border: 1px solid #455B55;
+    border-radius: 4px;
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 420px;
+    margin: 0.5rem auto 2rem 2%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px #999; 
+}
+
+footer {
+    background-color: #455B55;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
