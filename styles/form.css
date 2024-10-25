@@ -5,6 +5,19 @@ body {
     font-size: 1rem;
 }
 
+main {
+    min-height: 50vh;
+    margin: 2rem auto;
+}
+
+#thankyou {
+    /* border: 1px solid red; */
+    width: 90%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
 main h1 {
     background-color: #455B55;
     padding: 1rem;
@@ -48,7 +61,7 @@ form {
 
 .prf #select-product {
     min-height: 50px; 
-    min-width: 400px; 
+    min-width: 405px; 
 }
 
 
@@ -56,9 +69,9 @@ form {
     display: block;
     border: 1px solid #999;
     border-radius: 3px;
-    padding: 0.9rem 0.6rem;
+    padding: 0.9rem 0.7rem;
     width: 100%;
-    max-width: 380px;
+    max-width: 385px;
 }
 
 .prf input[type="checkbox"] {
@@ -105,10 +118,10 @@ form {
     font-weight: bold;
 }
 
-/* Add extra specificity to avoid adding asterisk to labels not linked to required fields */
+/* Make sure only required fields have an asterisk */
 .prf #rating-options label::after,
 .prf #useful-features label::after {
-    content: ""; /* This clears the asterisk for specific label types */
+    content: ""; 
 }
 
 
