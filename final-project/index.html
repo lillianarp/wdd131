@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tok Stori | A Prompted Journal and Content Manager Tool</title>
+    <meta name="description" content="Student Project for WDD 131: Dynamic Web Fundamentals">
+    <meta name="author" content="By Lillian Arp, Fall Semester 2024">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/tokstori.css">
+    <link rel="stylesheet" href="styles/tokstori-larger.css">
+    <script src="scripts/tokstori.js" defer></script>
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <a href="index.html"><h2>Tok Stori</h2></a>
+            </div>
+            <!-- Responsive Menu -->
+            <button id="hamburger" aria-label="Menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="journal.html">JOURNAL</a></li>
+                <li><a href="insights.html">INSIGHTS</a></li>
+            </ul>
+    </header>
+    <main>
+        <section>
+            <div class="blurb">
+                <h3>Journal with purpose.</h3>
+                <h1>Share your story with the world.</h1>
+                <button id="call-button">POST MY STORY</button>
+            </div> 
+        </section>
+
+        <div class="content-hero">
+            <picture>
+                <source srcset="images/daybook2_1000x666.webp" media="(min-width: 768px)">
+                <img src="images/daybook2_800x533.webp" alt="Mobile phone and laptop"> 
+            </picture>    
+        </div>
+
+        <section>
+            <h2>Welcome to Tok Stori</h2>
+            
+                <div class="toggle">
+                    <h3 class="toggle-title">What is Tok Stori?</h3>
+                    <div class="toggle-content">
+                        <p>Tok Stori is a journaling and content creation tool.</p>
+                        <p>The phrase, 'tok stori' comes from Melanesian cultures in the Pacific. It refers to telling and sharing stories as a community - creating a shared narrative - in order to make sense of experiences and emotions and to preserve wisdom and learning.  </p>
+                        <p>The Tok Stori journaling tool helps us to capture our own daily stories in a way that makes them easy to share. </p>
+                    </div>    
+                </div>
+                <div class="toggle">
+                    <h3 class="toggle-title">Capture life's moments, effortlessly</h3>
+                    <div class="toggle-content">
+                        <p>Tok Stori is designed for simplicity and privacy. With just a few clicks, you can record your thoughts, track your experiences, and keep everything securely stored in one place.</p><p> Whether you want to jot down a quick note or reflect on a meaningful experience, your entries are always accessible and safe.</p>
+                    </div>
+                </div>
+                <div class="toggle">
+                    <h3 class="toggle-title">Your stories, safely stored</h3>
+                    <div class="toggle-content">
+                        <p>Privacy is built into every feature of Tok Stori. All your entries are securely stored and accessible only to you, ensuring that your reflections stay safe, personal, and always within reach.</p> <p>From quick notes to meaningful experiences, your stories are kept under lock and key... until you decide what you want to share!</p>
+                    </div>
+                </div>
+                <div class="toggle">
+                    <h3 class="toggle-title">A social kind of journal</h3>
+                    <div class="toggle-content">
+                        <p>Transform your entries into shareable stories with ease. Tok Stori lets you create a polished, 1-minute script from your journal, perfect for a voiceover or quick video.</p> 
+                        <p>When you're ready, you can instantly post it to your social media or schedule it for later, all from within the platform.</p>
+                    </div>
+                </div>
+                
+        </section>
+        
+
+    </main>
+    <footer>
+        <div class="footer-hero">
+            <picture>
+                <source srcset="images/daybook1_1000x666.webp" media="(min-width: 768px)">
+                <img src="images/daybook1_800x533.webp" alt="People standing in a row" loading="lazy"> 
+            </picture>
+        </div>
+        <div class="footerbase">
+            <p>Copyright &copy; <span id="currentYear"></span> 🌴 Lillian Arp 🌴</p>
+            <p id="lastModified">Last Modified: <span id="modifiedDate"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
+

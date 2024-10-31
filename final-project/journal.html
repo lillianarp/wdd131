@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tok Stori | A Prompted Journal and Content Manager Tool</title>
+    <meta name="description" content="Student Project for WDD 131: Dynamic Web Fundamentals">
+    <meta name="author" content="By Lillian Arp, Fall Semester 2024">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/tokstori.css">
+    <link rel="stylesheet" href="styles/tokstori-larger.css">
+    <script src="scripts/tokstori.js" defer></script>
+    
+</head>
+<body class="journal-page">
+    <header>
+        <div class="logo">
+            <a href="index.html"><h2>Tok Stori</h2></a>
+        </div>
+        <!-- Responsive Menu -->
+        <button id="hamburger" aria-label="Menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="journal.html">JOURNAL</a></li>
+            <li><a href="insights.html">INSIGHTS</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Journal</h1>
+        <!-- THE HTML FORM -->        
+        <form id="journal-form">
+            <div id="prompt-header">
+                <button type="button" id="prompt-button">Get a Prompt</button>
+                <div id="random-prompt">Prompt appears here</div>
+            </div>
+            
+            <!-- Text Area for Journal Entry -->
+            <div id="entry-container">
+                <label for="entry-content"></label>
+                <textarea id="entry-content" name="entry-content" placeholder="Start writing here..."></textarea>
+            </div>
+
+            <!-- SAVE BUTTON -->    
+            <div id="save-entry"> 
+                <button id="save-button">Save Story</button> 
+
+                <!-- Choose a Story Topic -->
+                <div id="story-topic">
+                        <select id="topic-select" name="topic">
+                            <option value="" disabled selected>Story Topic</option>
+                            <option value="personal">Personal</option>
+                            <option value="work">Work</option>
+                            <option value="health">Health</option>
+                            <option value="goals">Goals</option>
+                        </select>
+                </div>  
+            </div> 
+
+            <div id="entries-section">
+                <!-- TOGGLE OF PREVIOUS ENTRIES -->
+                <button type="button" id="toggle-entries-button">Show/Hide Previous Entries</button>
+                <div id="entries-container">
+                    <!-- Previous entries go here -->
+                </div>
+            </div>
+
+        </form>
+        
+    </main>
+    <footer>
+        <!-- <div class="footer-hero">
+            <picture">
+                <source srcset="images/warm_1000x1331.webp" media="(min-width: 768px)">
+                <img src="images/warm_700x932.webp" alt="A warm sunset" loading="lazy"> 
+            </picture>
+        </div> -->
+        <div class="footerbase">
+            <p>Copyright &copy; <span id="currentYear"></span> 🌴 Lillian Arp 🌴</p>
+            <p id="lastModified">Last Modified: <span id="modifiedDate"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
